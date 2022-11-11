@@ -1,0 +1,91 @@
+.format {
+    padding-bottom: 160px;
+    @media (max-width: 992px) {
+        padding-bottom: 90px;
+    }
+    @media (max-width: 576px) {
+        padding-bottom: 70px;
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.05em;
+        @media (max-width: 992px) {
+            font-size: 35px;
+        }
+        @media (max-width: 576px) {
+            font-size: 30px;
+        }
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #B6B6B6;
+        margin-top: 43px;
+        @media (max-width: 992px) {
+            font-size: 17px;
+        }
+    }
+    &__classes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 32px 32px 32px;
+        row-gap: 108px;
+        margin-top: 102px;
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 32px 32px 32px 32px;
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 32px);
+        }
+        @media (max-width: 576px) {
+            margin-top: 60px;
+        }
+    }
+    &__class {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-bottom: 108px;
+        position: relative;
+        cursor: pointer;
+        svg {
+            margin-left: 15px;
+            transition: .3s;
+            path {
+                transition: .3s;
+            }
+        }
+    }
+    &__descr {
+        background: #1C1C1C;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        padding: 0 20px;
+        z-index: 20;
+        max-height: 0;
+        overflow: hidden;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-top: 10px;
+        p {
+            margin-top: 23px;
+            margin-bottom: 23px;
+        }
+        &_active {
+            overflow: visible;
+            max-height: 3000px;
+        }
+    }
+}

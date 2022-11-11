@@ -1,0 +1,104 @@
+.price {
+    padding-bottom: 160px;
+    @media (max-width: 992px) {
+        padding-bottom: 90px;
+    }
+    @media (max-width: 576px) {
+        padding-bottom: 70px;
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.05em;
+        @media (max-width: 992px) {
+            font-size: 35px;
+        }
+    }
+    &__content {
+        display: flex;
+        margin-top: 80px;
+        justify-content: space-between;
+        @media (max-width: 992px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__photo {
+        margin-right: 105px;
+        @media (max-width: 1300px) {
+            height: 310px;
+        }
+        @media (max-width: 992px) {
+            height: 280px;
+            margin-right: 0;
+            margin-bottom: 80px;
+        }
+        @media (max-width: 768px) {
+            height: 250px;
+        }
+    }
+    &__info {
+        margin-right: 63px;
+        padding: 43px 70px;
+        background: #1C1C1C;
+        box-shadow: 0px 0px 20px #2F80ED;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @media (max-width: 992px) {
+            margin-right: 0;
+        }
+        @media (max-width: 576px) {
+            padding: 35px 5px;
+            width: 250px;
+        }
+        h2 {
+            background: linear-gradient(180deg, #E1338C 0%, #F23F66 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 40px;
+            line-height: 47px;
+            text-align: center;
+            letter-spacing: 0.02em;
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #898989;
+            position: relative;
+            text-align: center;
+            margin-top: 16px;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -15px;
+                transform: translateY(-50%);
+                width: 100px;
+                height: 1px;
+                background: #2F80ED;
+            }
+        }
+        h4 {
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            margin-top: 21px;
+        }
+    }
+    &__btn {
+        padding: 15px 42px;
+        margin-top: 43px;
+    }
+    &__logo {
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+}

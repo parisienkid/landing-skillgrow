@@ -1,0 +1,36 @@
+.mobile {
+    position: fixed;
+    top: 77px;
+    left: -100%;
+    height: calc(100% - 77px);
+    width: 100%;
+    background: hsl(240, 2%, 10%);
+    transition: .7s;
+    z-index: 600;
+    &_active {
+        left: 0;
+    }
+    .container {
+        height: 100%;
+    }
+    &__menu {
+        padding: 60px 0;
+        height: 100%;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        a {
+            color: #53d8ff;
+            padding: 20px 20px;
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}

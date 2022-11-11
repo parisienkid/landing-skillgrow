@@ -1,0 +1,56 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/animate.min';
+@import 'libs/tiny-slider';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, html {
+    height: 100%;
+    position: relative;
+    background: rgba(26, 26, 27, 1);
+}
+
+
+main {
+    background: #161616;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    @media (max-width: 1300px) {
+        width: 85%;
+        min-width: 900px;
+    }
+    @media (max-width: 992px) {
+        min-width: 740px;
+    }
+    @media (max-width: 768px) {
+        min-width: 540px;
+    }
+    @media (max-width: 576px) {
+        min-width: 300px;
+    }
+}
+
+@import 'base/btns';
+@import 'base/titles';
+@import 'blocks/modal';
+@import 'blocks/overlay';
+@import 'blocks/mobile';
+@import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/about';
+@import 'blocks/steps';
+@import 'blocks/specialists';
+@import 'blocks/format';
+@import 'blocks/price';
+@import 'blocks/profit';
+@import 'blocks/partners';
+@import 'blocks/footer';

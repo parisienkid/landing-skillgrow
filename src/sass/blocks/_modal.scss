@@ -1,0 +1,120 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 600;
+    background: #161616;
+    padding: 90px 180px 80px 180px;
+    display: none;
+    @media (max-width: 1300px) {
+        padding: 70px 140px;
+    }
+    @media (max-width: 992px) {
+        padding: 50px 100px;
+    }
+    @media (max-width: 768px) {
+        height: 100%;
+        width: 100%;
+        padding: 80px 35px 0 35px;
+    }
+    @media (max-width: 768px) {
+        padding: 60px 15px 0 15px;
+    }
+    &_active {
+        display: block;
+    }
+    &__close {
+        cursor: pointer;
+        transform: rotate(45deg);
+        position: absolute;
+        padding: 10px;
+        top: 15px;
+        right: 15px;
+        height: 50px;
+        width: 50px;
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.05em;
+        padding-bottom: 30px;
+        @media (max-width: 992px) {
+            font-size: 35px;
+        }
+        @media (max-width: 768px) {
+            font-size: 17px;
+            line-height: 21px;
+        }
+        @media (max-width: 768px) {
+            padding-bottom: 15px;
+        }
+    }
+    &__item {
+        position: relative;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        label {
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            color: #939393;
+            margin-left: 15px;
+            display: block;
+        }
+        input, select {
+            width: 700px;
+            height: 60px;
+            background: #1C1C1C;
+            box-shadow: 0px 0px 8px #2F80ED;
+            border-radius: 20px;
+            margin-bottom: 21px;
+            padding: 0 15px;
+            color: #fff;
+            border: none;
+            font-size: 22px;
+            &:nth-of-type(4) {
+                margin-bottom: 0;
+            }
+            @media (max-width: 1300px) {
+                width: 600px;
+            }
+            @media (max-width: 992px) {
+                width: 500px;
+            }
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+            @media (max-width: 768px) {
+                height: 40px;
+                margin-bottom: 14px;
+            }
+        }
+        select {
+            position: relative;
+            appearance: none;
+
+        }
+    }
+    &__select {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 19px;
+    }
+    &__btn {
+        font-size: 26px;
+        line-height: 32px;
+        color: #FFFFFF;
+        padding: 25px 65px;
+        margin-top: 72px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        @media (max-width: 768px) {
+            font-size: 18px;
+            padding: 17px 40px;
+            margin-top: 30px;
+        }
+    }
+}
